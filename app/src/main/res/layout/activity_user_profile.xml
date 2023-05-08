@@ -4,29 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UserProfileActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="350dp"
-        android:layout_height="363dp"
+        android:id="@+id/linearLayout10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="51dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            app:srcCompat="@drawable/farmers" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up to Agri App"
-            android:textSize="20sp" />
+            android:text="Profile"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/register_fName"
+            android:id="@+id/profile_fName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -34,7 +43,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/register_lName"
+            android:id="@+id/profile_lName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -42,7 +51,16 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/register_country"
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/profile_country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -50,50 +68,27 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/register_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/register_password"
+            android:id="@+id/profile_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword" />
 
-        <EditText
-            android:id="@+id/register_confirmPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Re-enter password"
-            android:inputType="textPassword" />
-
         <Button
-            android:id="@+id/btn_signup"
+            android:id="@+id/btn_user_update_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
-            android:text="Sign Up" />
-    </LinearLayout>
+            android:text="Update Details" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="254dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/farmers" />
+        <Button
+            android:id="@+id/btn_user_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#437290"
+            android:text="Logout" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
